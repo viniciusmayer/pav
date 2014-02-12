@@ -9,6 +9,11 @@
 <body>
 
 	<span>${msg}</span>
+	<br />
+	<label for="username"></label>
+	<span id="username">${user_name}</span>
+	<br />
+	<a href="logout">Logout</a>
 
 </body>
 </html>
