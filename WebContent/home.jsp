@@ -5,15 +5,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Home</title>
+<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+	<div id="barra">
+		<span id="username">${user_name}</span> | <a href="logout" onclick="return confirmar();">Logout</a>		
+	</div>
 
-	<span>${msg}</span>
-	<br />
-	<label for="username"></label>
-	<span id="username">${user_name}</span>
-	<br />
-	<a href="logout">Logout</a>
-
+	<div id="cabecalho">
+		<div id="logo"></div>
+	</div>
+	
+	<div id="mensagem">
+		<span>${msg}</span>
+	</div>
+		
+	<div id="corpo">
+		
+		corpo
+	</div>
+	
+	<div id="rodape">
+		rodape
+	</div>
 </body>
 </html>

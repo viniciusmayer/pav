@@ -5,23 +5,42 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Login</title>
+<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
-	<form action="login" method="post">
+	<div id="barra">
+		<a href="index.html">Cancelar</a>		
+	</div>
 
-		<label for="email">Email</label>
-		<input id="email" name="email" type="text" />
-		<br />
+	<div id="cabecalho">
+		<div id="logo"></div>
+	</div>
+	
+	<div id="mensagem">
+		mensagem
+	</div>
 		
-		<label for="password">Password</label>
-		<input id="password" name="password" type="password" />
-		<br />
-
-		<input type="submit" value="Login" />
-		<a href="index.html">Cancelar</a>
-
-	</form>
+	<div id="corpo">
+		<form action="login" method="post">
+	
+			<label for="email">Email</label>
+			<input id="email" name="email" type="text" />
+			<br />
+			
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" />
+			<br />
+	
+			<input class="button" type="submit" value="Login" />
+	
+		</form>
+	</div>
+	
+	<div id="rodape">
+		rodape
+	</div>
 
 </body>
 </html>
