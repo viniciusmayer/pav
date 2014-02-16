@@ -20,9 +20,9 @@ public class HomeServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
+
 		User user = (User) session.getAttribute("session_user");
 		request.setAttribute("user_name", user.getEmail());
-		
 		request.setAttribute("msg", "home page");
 		
 		request.getRequestDispatcher("home.jsp").forward(request, response);

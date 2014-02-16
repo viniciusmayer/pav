@@ -12,6 +12,10 @@ body {
 	padding: 5px;
 }
 
+#barra span {
+	padding-right: 5px;
+}
+
 #cabecalho {
 	padding: 10px;
 	background-color: #2e4a90;
@@ -28,6 +32,7 @@ body {
 	padding: 10px;
 	margin-top: 10px;
 	border: 1px solid black;
+	padding-left: 100px;
 }
 
 #mensagem {
@@ -40,20 +45,16 @@ body {
 	padding: 10px;
 	margin-bottom: 10px;
 	border: 1px solid black;
-}
-
-#corpo input {
-	width: 200px;
+	padding-left: 100px;
 }
 
 #corpo label {
 	display: inline-block;
 	width: 100px;
-	margin-left: 100px;
 }
 
 #corpo .button {
-	margin-left: 205px;
+	margin-left: 105px;
 }
 
 #rodape {
