@@ -1,30 +1,29 @@
 package br.com.ftec.pav;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet("/home")
-public class HomeServlet extends HttpServlet {
-
-	private static final long serialVersionUID = 2157085424666816103L;
+@WebServlet("/listarusuarios")
+public class ListarUsuariosServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		throw new ServletException("not yet");
+		doPost(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session = request.getSession();
-
-		Usuario user = (Usuario) session.getAttribute("session_user");
-		request.setAttribute("user_name", user.getEmail());
-		request.setAttribute("msg", "home page");
-		
-		request.getRequestDispatcher("home.jsp").forward(request, response);
+		List<Usuario> usuarios = new ArrayList<Usuario>();
+		for (int i = 0; i < 10; i += 1) {
+			usuarios.add(new Usuario("email" + i + "@ftec", "senha"+i*3));
+		}
+		request.setAttribute("usuarios", usuarios);
+		request.getRequestDispatcher("listarusuarios.jsp").forward(request, response);
 	}
 }

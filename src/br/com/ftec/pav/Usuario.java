@@ -1,14 +1,14 @@
 package br.com.ftec.pav;
 
-public class User {
+public class Usuario {
 
 	private String email;
 	private String password;
 
-	public User() {
+	public Usuario() {
 	}
 
-	public User(String email, String password) {
+	public Usuario(String email, String password) {
 		this.email = email;
 		this.password = password;
 	}

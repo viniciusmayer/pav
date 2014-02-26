@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
 			if (password != null && !password.trim().isEmpty()) {
 				if (email.equals("admin@ftec") && password.equals("123qwe")) {
 					HttpSession session = request.getSession();
-					session.setAttribute("session_user", new User("admin@ftec.com.br", "123qwe"));
+					session.setAttribute("session_user", new Usuario("admin@ftec.com.br", "123qwe"));
 					request.getRequestDispatcher("home").forward(request, response);
 					return;
 				}

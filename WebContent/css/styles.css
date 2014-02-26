@@ -19,6 +19,7 @@ body {
 #cabecalho {
 	padding: 10px;
 	background-color: #2e4a90;
+	margin-bottom: 10px;
 }
 
 #logo {
@@ -29,21 +30,24 @@ body {
 }
 
 #titulo {
-	padding: 10px;
-	margin-top: 10px;
-	border: 1px solid black;
+	border-bottom: 2px solid black;
 	padding-left: 100px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #mensagem {
 	color: red;
 	text-align: center;
-	padding: 10px;
+	margin-bottom: 10px; 
 }
 
 #corpo {
 	padding: 10px;
 	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	border: 1px solid black;
 	padding-left: 100px;
 }
@@ -62,4 +66,21 @@ body {
 	text-align: center;
 	padding: 10px;
 	background-color: #2e4a90;
+}
+
+#tabela {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tabela th {
+	border: 1px solid black;
+}
+
+#tabela td {
+	border: 1px solid black;
+}
+
+#tabela td.acoes {
+	text-align: center;
 }

@@ -21,14 +21,30 @@
 
 	<c:if test="${!empty msg}">
 		<div id="mensagem">
-				<span>${msg}</span>
+			<span>${msg}</span>
 		</div>
 	</c:if>
 
 	<div id="corpo">
-		
-		<a href="listarusuarios">Listar usuarios</a>
+		<table id="tabela">
+			<tr>
+				<th>Email</th>
+				<th>Senha</th>
+				<th>Acoes</th> 
+			</tr>
 	
+			<c:forEach items="${usuarios}" var="usuario">
+				<tr>
+					<td>${usuario.email}</td>
+					<td>${usuario.password}</td> 
+					<td class="acoes">
+						<a href="">Editar</a>
+						<br />
+						<a href="">Deletar</a>
+					</td>
+				</tr>
+			</c:forEach>
+		</table>
 	</div>
 
 	<div id="rodape">rodape</div>

@@ -19,11 +19,11 @@
 
 	<div id="titulo">titulo</div>
 
-	<div id="mensagem">
-		<c:if test="${!empty msg}">
-			<span>${msg}</span>
-		</c:if>
-	</div>
+	<c:if test="${!empty msg}">
+		<div id="mensagem">
+				<span>${msg}</span>
+		</div>
+	</c:if>
 
 	<div id="corpo">
 		<form action="login" method="post">
