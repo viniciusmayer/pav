@@ -28,11 +28,11 @@
 	<div id="corpo">
 		<form action="login" method="post">
 			<label for="email">Email</label>
-			<input id="email" name="email" type="text" />
+			<input id="email" name="email" type="email" required/>
 			<br />
 
 			<label for="password">Password</label>
-			<input id="password" name="password" type="password" />
+			<input id="password" name="password" type="password" required/>
 			<br />
 
 			<input class="button" type="submit" value="Login" />
